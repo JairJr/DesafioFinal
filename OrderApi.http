@@ -1,0 +1,22 @@
+@OrderApi_HostAddress = http://localhost:8080
+
+GET {{OrderApi_HostAddress}}/api/v1/orders
+Accept: application/json
+
+###
+
+POST {{OrderApi_HostAddress}}/api/v1/orders
+Content-Type: application/json
+
+{
+  "customerName": "João Silva",
+  "productName": "Notebook",
+  "totalAmount": 4500.00
+}
+
+###
+
+GET {{OrderApi_HostAddress}}/api/v1/orders/count
+Accept: application/json
+
+###
